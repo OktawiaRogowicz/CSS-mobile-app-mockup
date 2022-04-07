@@ -27,7 +27,7 @@ The third encounter with Frontend Mentor, this time - checking out my comfortabi
 
 
 <div align="center">
-  <img src="https://github.com/OktawiaRogowicz/ip-address-tracker/blob/main/src/ip-address-tracker-master/img.png"
+  <img src="https://github.com/OktawiaRogowicz/CSS-mobile-app-mockup/blob/main/img.png"
     alt="Screenshot" width="500"/>
 </div>
 
