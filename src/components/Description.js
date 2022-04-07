@@ -1,11 +1,20 @@
 import styled from "styled-components";
 
 const Container = styled.div`
+
+  @media screen and (max-width: 760px) {
+    width: 80%;
+    text-align: center;
+  }
   
   h1 {
     color: var(--very-dark-desaturated-violet);
     font-size: 3rem;
     font-weight: 500;
+
+    @media screen and (max-width: 760px) {
+      font-size: 2.5rem;
+    }
   }
   
   p {
