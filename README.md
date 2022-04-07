@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef">
-    <img src="https://github.com/OktawiaRogowicz/ip-address-tracker/blob/main/src/ip-address-tracker-master/img_2.png"
+    <img src="https://github.com/OktawiaRogowicz/CSS-mobile-app-mockup/blob/main/img_1.png"
       alt="Frontend mentor challenge"
       width="300"/>
   </a>
