@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/css-mobile-app-mockup/static/css/main.ec215571.css",
-    "main.js": "/css-mobile-app-mockup/static/js/main.9c41bd79.js",
-    "static/js/787.86f7e347.chunk.js": "/css-mobile-app-mockup/static/js/787.86f7e347.chunk.js",
-    "static/media/avatar.jpg": "/css-mobile-app-mockup/static/media/avatar.973be51eef36874a91a0.jpg",
-    "index.html": "/css-mobile-app-mockup/index.html",
-    "main.ec215571.css.map": "/css-mobile-app-mockup/static/css/main.ec215571.css.map",
-    "main.9c41bd79.js.map": "/css-mobile-app-mockup/static/js/main.9c41bd79.js.map",
-    "787.86f7e347.chunk.js.map": "/css-mobile-app-mockup/static/js/787.86f7e347.chunk.js.map"
+    "main.css": "/CSS-mobile-app-mockup/static/css/main.ec215571.css",
+    "main.js": "/CSS-mobile-app-mockup/static/js/main.af825912.js",
+    "static/js/787.86f7e347.chunk.js": "/CSS-mobile-app-mockup/static/js/787.86f7e347.chunk.js",
+    "static/media/avatar.jpg": "/CSS-mobile-app-mockup/static/media/avatar.973be51eef36874a91a0.jpg",
+    "index.html": "/CSS-mobile-app-mockup/index.html",
+    "main.ec215571.css.map": "/CSS-mobile-app-mockup/static/css/main.ec215571.css.map",
+    "main.af825912.js.map": "/CSS-mobile-app-mockup/static/js/main.af825912.js.map",
+    "787.86f7e347.chunk.js.map": "/CSS-mobile-app-mockup/static/js/787.86f7e347.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec215571.css",
-    "static/js/main.9c41bd79.js"
+    "static/js/main.af825912.js"
   ]
 }
