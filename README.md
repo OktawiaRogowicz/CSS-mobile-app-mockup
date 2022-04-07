@@ -15,7 +15,7 @@ This is a solution to the <a href="https://www.frontendmentor.io/challenges/chat
 
 The third encounter with Frontend Mentor, this time - checking out my comfortability with CSS.
 
-<strong>GitHub Pages</strong>: <a href="https://oktawiarogowicz.github.io/css-mobile-app-mockup/"><strong>LIVE SITE</strong></a>
+<strong>GitHub Pages</strong>: <a href="https://oktawiarogowicz.github.io/CSS-mobile-app-mockup/"><strong>LIVE SITE</strong></a>
 </div>
 
 <h1><code>Overview</code></h1>
@@ -36,7 +36,7 @@ The third encounter with Frontend Mentor, this time - checking out my comfortabi
 <div align="center">
   HTML <strong>||</strong> CSS <strong>||</strong> flexbox <strong>||</strong> React <strong>||</strong> Styled components
   
-  <strong>GitHub Pages</strong>: <a href="https://oktawiarogowicz.github.io/css-mobile-app-mockup/"><strong>LIVE SITE</strong></a>
+  <strong>GitHub Pages</strong>: <a href="https://oktawiarogowicz.github.io/CSS-mobile-app-mockup/"><strong>LIVE SITE</strong></a>
 </div>
 
 ### What I learned
