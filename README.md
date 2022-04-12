@@ -40,11 +40,10 @@ The third encounter with Frontend Mentor, this time - checking out my comfortabi
 </div>
 
 ### What I learned
----
+I think the project definitelly made me more comfortable with CSS, however, the most important thing was forcing me to actually learn animation only using CSS! Before, I touched the subject of React Motion slighly, but this time I was determined to depend only on the basics.
 
 ### Continued development
-
---
+I would definitelly like to continue developing the animations even more, as well as maybe make the mockup more responsive to user's input.
 
 <h1><code>Author</code></h1>
 
