@@ -1,9 +1,20 @@
 import './App.css';
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import Description from "./components/Description";
 import Phone from "./components/phone/Phone";
 
-export const AppContainer = styled.div`
+const moveVertically = (y) => keyframes`
+  0% {
+    transform: translateY(0);
+    background-position: 0 50%;
+  }
+  100% {
+    transform: translateY(${y});
+    background-position: 100% 50%;
+  }
+`;
+
+const AppContainer = styled.div`
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -29,10 +40,13 @@ export const AppContainer = styled.div`
     width: 28rem;
     height: 85%;
     background-image: radial-gradient(circle at bottom left, var(--light-violet), var(--light-magenta));
+    //background-size: 400% 400%;
     
     border-radius: 0 0 20rem 20rem;
     
     z-index: 2;
+    
+    animation: ${props => moveVertically(props.y1)} 8s infinite ease-in-out alternate-reverse;
 
     @media screen and (max-width: 760px) {
       height: 50%;
@@ -57,6 +71,8 @@ export const AppContainer = styled.div`
 
     z-index: 2;
 
+    animation: ${props => moveVertically(props.y2)} 8s infinite ease-in-out alternate-reverse;
+
     @media screen and (max-width: 760px) {
       height: 65%;
       width: 100%;
@@ -66,7 +82,7 @@ export const AppContainer = styled.div`
   }
 `
 
-export const Section = styled.div`
+const Section = styled.div`
   width: 28rem;
   height: fit-content;
   z-index: 3;
@@ -81,7 +97,7 @@ export const Section = styled.div`
 
 function App() {
   return (
-    <AppContainer>
+    <AppContainer y1={'-2rem'} y2={'2rem'}>
         <Section>
             <Phone/>
         </Section>

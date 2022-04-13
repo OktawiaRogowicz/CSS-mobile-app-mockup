@@ -2,7 +2,7 @@
   "homepage": "https://oktawiarogowicz.github.io/CSS-mobile-app-mockup/",
   "name": "chat-app-css",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.4",
