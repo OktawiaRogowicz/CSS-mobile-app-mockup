@@ -153,7 +153,7 @@ export const MessageLeftButton = styled(MessageLeft)`
   max-width: 70%;
   width: 70%;
   box-sizing: border-box;
-  background-image: linear-gradient(90deg, var(--light-magenta), var(--light-violet), var(--light-magenta), var(--light-violet));
+  background-image: linear-gradient(90deg, var(--light-magenta), var(--light-violet));
   background-size: 400% 400%;
   
   color: var(--white);
