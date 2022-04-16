@@ -15,7 +15,7 @@ This is a solution to the <a href="https://www.frontendmentor.io/challenges/chat
 
 The third encounter with Frontend Mentor, this time - checking out my comfortability with CSS.
 
-<strong>GitHub Pages</strong>: <a href="https://oktawiarogowicz.github.io/css-mobile-app-mockup/"><strong>LIVE SITE</strong></a>
+<strong>GitHub Pages</strong>: <a href="https://oktawiarogowicz.github.io/CSS-mobile-app-mockup/"><strong>LIVE SITE</strong></a>
 </div>
 
 <h1><code>Overview</code></h1>
@@ -36,15 +36,14 @@ The third encounter with Frontend Mentor, this time - checking out my comfortabi
 <div align="center">
   HTML <strong>||</strong> CSS <strong>||</strong> flexbox <strong>||</strong> React <strong>||</strong> Styled components
   
-  <strong>GitHub Pages</strong>: <a href="https://oktawiarogowicz.github.io/css-mobile-app-mockup/"><strong>LIVE SITE</strong></a>
+  <strong>GitHub Pages</strong>: <a href="https://oktawiarogowicz.github.io/CSS-mobile-app-mockup/"><strong>LIVE SITE</strong></a>
 </div>
 
 ### What I learned
----
+I think the project definitelly made me more comfortable with CSS, however, the most important thing was forcing me to actually learn animation only using CSS! Before, I touched the subject of React Motion slighly, but this time I was determined to depend only on the basics.
 
 ### Continued development
-
---
+I would definitelly like to continue developing the animations even more, as well as maybe make the mockup more responsive to user's input.
 
 <h1><code>Author</code></h1>
 
