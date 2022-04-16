@@ -1,4 +1,17 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
+
+export const moveHorizontally = keyframes`
+  from {
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+`;
+
 
 const Container = styled.div`
 
@@ -11,6 +24,7 @@ const Container = styled.div`
     color: var(--very-dark-desaturated-violet);
     font-size: 3rem;
     font-weight: 500;
+    animation: ${moveHorizontally} 0.8s ease-in-out both;
 
     @media screen and (max-width: 760px) {
       font-size: 2.5rem;
@@ -20,6 +34,7 @@ const Container = styled.div`
   p {
     color: var(--dark-grayish-violet);
     line-height: 1.8;
+    animation: ${moveHorizontally} 0.8s ease-in-out both;
   }
 `
 
