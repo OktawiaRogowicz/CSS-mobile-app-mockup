@@ -3,7 +3,9 @@ import Image1 from "../../chat-app-css-illustration-master/images/dog-image-1.jp
 import Image2 from "../../chat-app-css-illustration-master/images/dog-image-2.jpg";
 import Image3 from "../../chat-app-css-illustration-master/images/dog-image-3.jpg";
 import Radio from "../Radio";
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
+import {useEffect} from "react";
+import React from 'react';
 
 export const Container = styled.div`
   width: 18.75rem;
@@ -18,6 +20,8 @@ export const Container = styled.div`
   border-width: 0.625em;
   border-color: var(--white);
   border-style: solid;
+  
+  box-shadow: 0em 0em 2em rgba(0, 0, 0, 0.1);
   
   &:before {
     position: absolute;
@@ -79,10 +83,23 @@ const Username = styled.div`
   }
 `
 
+const showMessage = keyframes`
+  from {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
+
 const Message = styled.div`
   min-width: 30%;
   max-width: 50%;
   width: fit-content;
+  display: flex;
   
   padding: 0.9em 0.9em 0.9em 0.9em;
   margin: 0.625rem;
@@ -90,49 +107,8 @@ const Message = styled.div`
   line-height: 1.4;
   
   font-size: 0.6rem;
-`
-
-export const MessageRight = styled(Message)`
-  background-color: var(--white);
-
-  border-radius: 0.625em 0.625em 0.3em 0.625em;
   
-  margin-right: 0.625rem;
-  margin-left: auto;
-
-  text-align: right;
-  color: var(--desaturated-dark-violet);
-`;
-
-export const MessageRightButton = styled(Message)`
-  max-width: 70%;
-  width: 70%;
-  display: flex;
-  box-sizing: border-box;
-  background-image: linear-gradient(90deg, var(--light-magenta), var(--light-violet));
-
-  border-radius: 0.625em 0.625em 0.625em 0.3em;
-  
-  margin: 0.625rem auto 0.625rem 0.625rem;
-  
-  color: var(--white);
-`;
-
-export const MessageRightImage = styled.div`
-  width: fit-content;
-  display: flex;
-  
-  margin-left: auto;
-  margin-right: 0;
-  margin-bottom: 0.625rem;
-  margin-top: 0.625rem;
-  
-    img {
-      box-sizing: border-box;
-      border-radius: 1rem;
-      height: 3.25rem;
-      margin-right: 0.615rem;
-    }
+  animation: ${showMessage} 400ms linear both;
 `
 
 export const MessageLeft = styled(Message)`
@@ -144,8 +120,61 @@ export const MessageLeft = styled(Message)`
   margin-right: auto;
 
   text-align: left;
+  justify-content: left;
   color: var(--moderate-violet);
 `;
+
+export const MessageRight = styled(Message)`
+  background-color: var(--white);
+
+  border-radius: 0.625em 0.625em 0.3em 0.625em;
+  
+  margin-right: 0.625rem;
+  margin-left: auto;
+
+  text-align: right;
+  justify-content: right;
+  color: var(--desaturated-dark-violet);
+`;
+
+const animateGradient = keyframes`
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+`
+
+export const MessageLeftButton = styled(MessageLeft)`
+  max-width: 70%;
+  width: 70%;
+  box-sizing: border-box;
+  background-image: linear-gradient(90deg, var(--light-magenta), var(--light-violet), var(--light-magenta), var(--light-violet));
+  background-size: 400% 400%;
+  
+  color: var(--white);
+`;
+
+export const MessageRightImage = styled(MessageRight)`
+  min-width: auto;
+  max-width: none;
+  width: fit-content;
+  background: transparent;
+  padding: 0;
+  
+    img {
+      box-sizing: border-box;
+      border-radius: 1rem;
+      height: 3.25rem;
+      margin-right: 0.5rem;
+
+      box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
+    }
+`
 
 export const BottomInput = styled.div`
   height: 2em;
@@ -190,47 +219,71 @@ export const BottomInput = styled.div`
   }
 `
 
-const Phone = () => {
+class Phone extends React.Component {
+    ref = React.createRef();
 
-    return (
-        <Container>
-            <TopContainer>
-                <NameSubcontainer>
-                    <div style={{marginRight: "0.3rem", marginLeft: "0", marginTop: "0.625rem", fontWeight: "700"}}>&#60;</div>
-                    <img src={Avatar} alt={"Logo"}/>
-                    <Username>
-                        <h1>Samuel Green</h1>
-                        <h2>Available to Walk</h2>
-                    </Username>
-                    <div style={{marginRight: "0", marginLeft: "auto", marginTop: "0.625rem", fontWeight: "700"}}>&#8942;</div>
-                </NameSubcontainer>
-            </TopContainer>
+    // componentDidMount() {
+    //     const initialDelay = 200;
+    //     [...this.ref.current.children].forEach(function addDelaysToMessages(message, index) {
+    //         let delay = initialDelay + index * 800;
+    //         delay = delay.toString();
+    //         message.style.animationDelay = delay + "ms";
+    //     });
+    // }
 
-            <MessageLeft>That sounds great. I’d be happy with that.</MessageLeft>
-            <MessageLeft>Could you send over some pictures of your dog, please?</MessageLeft>
+    render() {
+        return (
+            <Container>
+                <TopContainer>
+                    <NameSubcontainer>
+                        <div style={{
+                            marginRight: "0.3rem",
+                            marginLeft: "0",
+                            marginTop: "0.625rem",
+                            fontWeight: "700"
+                        }}>&#60;</div>
+                        <img src={Avatar} alt={"Logo"}/>
+                        <Username>
+                            <h1>Samuel Green</h1>
+                            <h2>Available to Walk</h2>
+                        </Username>
+                        <div style={{
+                            marginRight: "0",
+                            marginLeft: "auto",
+                            marginTop: "0.625rem",
+                            fontWeight: "700"
+                        }}>&#8942;</div>
+                    </NameSubcontainer>
+                </TopContainer>
+                <div ref={this.ref}>
+                    <MessageLeft>That sounds great. I’d be happy with that.</MessageLeft>
+                    <MessageLeft>Could you send over some pictures of your dog, please?</MessageLeft>
 
-            <MessageRightImage>
-                <img src={Image1} alt={"Logo"}/>
-                <img src={Image2} alt={"Logo"}/>
-                <img src={Image3} alt={"Logo"}/>
-            </MessageRightImage>
-            <MessageRight>Here are a few pictures. She’s a happy girl!</MessageRight>
-            <MessageRight>Can you make it?</MessageRight>
+                    <MessageRightImage>
+                        <img src={Image1} alt={"Logo"}/>
+                        <img src={Image2} alt={"Logo"}/>
+                        <img src={Image3} alt={"Logo"}/>
+                    </MessageRightImage>
+                    <MessageRight>Here are a few pictures. She’s a happy girl!</MessageRight>
+                    <MessageRight>Can you make it?</MessageRight>
 
-            <MessageLeft>She looks so happy! The time we discussed works. How long shall I take her out for?</MessageLeft>
+                    <MessageLeft>She looks so happy! The time we discussed works. How long shall I take her out
+                        for?</MessageLeft>
 
-            <MessageRightButton>
-                <Radio amount="$29">30 minute walk</Radio>
-            </MessageRightButton>
-            <MessageRightButton>
-                <Radio amount="$49">1 hour walk</Radio>
-            </MessageRightButton>
+                    <MessageLeftButton>
+                        <Radio amount="$29">30 minute walk</Radio>
+                    </MessageLeftButton>
+                    <MessageLeftButton>
+                        <Radio amount="$49">1 hour walk</Radio>
+                    </MessageLeftButton>
+                </div>
 
-            <BottomInput>
-                <p>Type a message…</p>
-            </BottomInput>
-        </Container>
-    )
+                <BottomInput>
+                    <p>Type a message…</p>
+                </BottomInput>
+            </Container>
+        )
+    }
 }
 
 export default Phone;
