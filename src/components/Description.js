@@ -15,7 +15,7 @@ export const moveHorizontally = keyframes`
 
 const Container = styled.div`
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 768px) {
     width: 80%;
     text-align: center;
   }

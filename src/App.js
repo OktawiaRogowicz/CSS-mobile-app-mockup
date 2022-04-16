@@ -15,8 +15,8 @@ const moveVertically = (y) => keyframes`
 `;
 
 const AppContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   position: relative;
   background-color: var(--light-grayish-violet);
   display: flex;
@@ -25,7 +25,9 @@ const AppContainer = styled.div`
   justify-content: center;
   z-index: 1;
 
-  @media screen and (max-width: 760px) {
+  overflow-x: hidden;
+
+  @media screen and (max-width: 768px) {
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -49,7 +51,7 @@ const AppContainer = styled.div`
 
     animation: ${props => moveVertically(props.y1)} 8s infinite ease-in-out alternate-reverse;
 
-    @media screen and (max-width: 760px) {
+    @media screen and (max-width: 768px) {
       height: 65%;
       width: 100%;
       left: -50%;
@@ -74,7 +76,7 @@ const AppContainer = styled.div`
 
     animation: ${props => moveVertically(props.y2)} 7s infinite ease-in-out alternate-reverse;
 
-    @media screen and (max-width: 760px) {
+    @media screen and (max-width: 768px) {
       height: 40%;
       width: 100%;
       right: -50%;
@@ -87,13 +89,12 @@ const Section = styled.div`
   width: 28rem;
   z-index: 3;
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 768px) {
     width: 100vw;
     justify-content: center;
     display: flex;
-    
+
     align-items: center;
-    
     margin: 2rem 0 2rem 0;
   }
 `
