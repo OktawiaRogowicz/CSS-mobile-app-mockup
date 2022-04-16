@@ -222,14 +222,14 @@ export const BottomInput = styled.div`
 class Phone extends React.Component {
     ref = React.createRef();
 
-    // componentDidMount() {
-    //     const initialDelay = 200;
-    //     [...this.ref.current.children].forEach(function addDelaysToMessages(message, index) {
-    //         let delay = initialDelay + index * 800;
-    //         delay = delay.toString();
-    //         message.style.animationDelay = delay + "ms";
-    //     });
-    // }
+    componentDidMount() {
+        const initialDelay = 200;
+        [...this.ref.current.children].forEach(function addDelaysToMessages(message, index) {
+            let delay = initialDelay + index * 800;
+            delay = delay.toString();
+            message.style.animationDelay = delay + "ms";
+        });
+    }
 
     render() {
         return (
