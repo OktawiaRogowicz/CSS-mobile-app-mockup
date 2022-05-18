@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef">
-    <img src="https://github.com/OktawiaRogowicz/CSS-mobile-app-mockup/blob/main/img_1.png"
+    <img src="https://github.com/OktawiaRogowicz/rock-paper-scissors-lizard-spock/blob/main/src/rock-paper-scissors-master/images/img_1.png?raw=true"
       alt="Frontend mentor challenge"
       width="300"/>
   </a>
@@ -27,7 +27,9 @@ The third encounter with Frontend Mentor, this time - checking out my comfortabi
 
 
 <div align="center">
-  <img src="https://github.com/OktawiaRogowicz/CSS-mobile-app-mockup/blob/main/img.png"
+  <img src="https://github.com/OktawiaRogowicz/rock-paper-scissors-lizard-spock/blob/main/src/rock-paper-scissors-master/images/img_2.png?raw=true"
+    alt="Screenshot" width="500"/>
+    <img src="https://github.com/OktawiaRogowicz/rock-paper-scissors-lizard-spock/blob/main/src/rock-paper-scissors-master/images/img_3.png?raw=true"
     alt="Screenshot" width="500"/>
 </div>
 
