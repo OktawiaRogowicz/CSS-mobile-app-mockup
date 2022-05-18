@@ -8,7 +8,7 @@
   </a>
 </div>
 
-<h2 align="center">🖌️ <code>3. chat app css illustration</code> 🖌️</h2>
+<h2 align="center">✂️ <code>4. rock paper scissors</code> ✂️</h2>
 
 <div align="center">
 This is a solution to the <a href="https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH">Rock, Paper, Scissors challenge on Frontend Mentor</a>! 
